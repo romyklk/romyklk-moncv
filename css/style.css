@@ -97,6 +97,33 @@ img {
     .grid-container {
       grid: "header" auto "main" auto "picture" auto "aside" auto "footer" auto / auto; } }
 
+nav {
+  padding: 1rem 2rem;
+  background: var(--black);
+  display: flex;
+  justify-content: flex-end;
+  flex-flow: row nowrap; }
+  @media (max-width: 480px) {
+    nav {
+      justify-content: center; } }
+  nav ul {
+    display: flex;
+    flex-flow: row nowrap;
+    list-style: none;
+    color: white;
+    font-size: 700; }
+    @media (max-width: 480px) {
+      nav ul {
+        display: block; } }
+    nav ul li {
+      padding: 2rem;
+      font-size: 2rem; }
+      nav ul li .who:hover {
+        color: gold;
+        transition: 2s; }
+  nav .who {
+    color: white; }
+
 header {
   grid-area: header;
   background: linear-gradient(to right, var(--primary), var(--light));
@@ -269,3 +296,16 @@ footer {
           min-width: 200px; } }
       footer form textarea::placeholder {
         color: var(--text); }
+
+.card {
+  margin-top: 20rem;
+  margin-bottom: 20rem;
+  margin-left: 50rem;
+  width: 50rem;
+  height: 10rem;
+  border-radius: 20px;
+  background-color: #ecf0f1;
+  border: 2px solid black;
+  justify-content: center;
+  text-align: center;
+  color: #1abc9c; }

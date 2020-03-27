@@ -27,6 +27,40 @@
     }
 }
 //DEBUT DU HEADER
+
+nav{
+    padding: 1rem 2rem;
+    background: var(--black);
+    display: flex;
+    justify-content: flex-end;
+    flex-flow: row nowrap;
+    @include xs{
+        justify-content: center;
+    }
+    ul{
+        display: flex;
+        flex-flow: row nowrap;
+        list-style: none;
+        color: white;
+        font-size: 700;
+        @include xs{
+            display: block;
+        }
+        li{
+            padding: 2rem;
+            font-size: 2rem;
+            .who:hover{
+                color: gold;
+                transition: 2s;
+            }
+        }
+    }
+    .who{
+        color: white;
+    }
+}
+
+
 header{
     grid-area: header;
     background: linear-gradient(to right, var(--primary),var(--light));
@@ -248,3 +282,18 @@ footer{
         }
     }
 }
+//REALISATION
+.card{
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+    margin-left: 50rem;
+    width: 50rem;
+    height: 10rem;
+    border-radius: 20px;
+    background-color: #ecf0f1;
+    border: 2px solid black;
+    justify-content: center;
+    text-align: center;
+    color: #1abc9c;
+}
+

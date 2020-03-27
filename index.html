@@ -8,13 +8,24 @@
     <script src="https://kit.fontawesome.com/ec70832a53.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
     <title>CV Romuald</title>
 </head>
 <body>
+<!--Début nav-->
+    <nav>
+        <ul>
+            <li><a href="index.html" class="who">Home</a></li>
+            <li><a href="#competences" class="who">Compétences</a></li>
+            <li><a href="realisation.html" class="who">Réalisations</a></li>
+            <li><a href="galerie.html" class="who">Galerie</a></li>
+            <li><a href="#contact" class="who">Contact</a></li>
+        </ul>
+    </nav>
+    <!--Fin Nav-->
     <div class="grid-container">
         <!--Debut du header-->
-        <header>
-            
+        <header>    
             <h1><span>D</span>éveloppeur <span>web</span></h1>
             <p>KOULEKO Romuald</p>
         </header>
@@ -45,7 +56,7 @@
                 <p>Licence Réseaux Informatiques et Télécommunications<br>Cotonou 2019 - 2020</p>
             </div>
 
-            <div class="block">
+            <div class="block" id="competences">
                 <h2 class="title-small">SKILLS</h2>
                 <h3>HTML 5 & CSS 3</h3>
                 <div class="bar-skill">
@@ -194,13 +205,18 @@
               </div>
             </div>
 
+            <h2 class="title-small">CERTIFICATIONS</h2>
+            <p class="mb-5"> - Certification Dyma HTML 5 & CSS 3 obtenu en 2020 
+                <a href="https://dyma.fr/certification/5e5e251791069c51acd447a0/5dab7f032482b13eb493df12" target="_blank">réference </a>
+            </p>
+
                 
             </div>
         </main>
         <!--Finde la partie présentation-->
 
         <footer>
-            <h2 class="title-small">Contactez-moi</h2>
+            <h2 class="title-small" id="contact">Contactez-moi</h2>
             <form name="contact" method="POST" data-netlify="true">
                 <i class="far fa-envelope fa-2x prefix"></i>
                 <div class="contact">
