@@ -201,18 +201,18 @@
 
         <footer>
             <h2 class="title-small">Contactez-moi</h2>
-            <form action="#">
+            <form name="contact" method="POST" data-netlify="true">
                 <i class="far fa-envelope fa-2x prefix"></i>
                 <div class="contact">
-                    <input type="text" placeholder="Votre nom">
+                    <input type="text" name="name" placeholder="Votre nom">
                 </div>
                 <div class="contact">
-                    <input type="text" placeholder="Votre e-mail">
+                    <input type="email" name="email" placeholder="Votre e-mail">
                 </div>
                 <div class="contact">
-                <textarea name="message" placeholder="Votre message"></textarea>
+                <textarea name="message" name="message" placeholder="Votre message"></textarea>
                 </div>
-                <button>
+                <button type="submit">
                     <i class="fas fa-paper-plane fa-4x postfix"></i>
                 </button>
             </form>
